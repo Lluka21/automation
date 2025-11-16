@@ -6,7 +6,7 @@ describe("SauceDemo Login Tests", () => {
     await LoginPage.open();
   });
 
-  // UC-1: Empty credentials
+
   it("UC-1: should show error for empty credentials", async () => {
     await LoginPage.username.setValue("anyuser");
     await LoginPage.password.setValue("anypass");
@@ -16,7 +16,6 @@ describe("SauceDemo Login Tests", () => {
     console.log("UC-1 passed");
   });
 
-  // UC-2: Username only, no password
   it("UC-2: should show error for missing password", async () => {
     await LoginPage.username.setValue("standard_user");
     await LoginPage.password.setValue("somepass");
@@ -26,7 +25,7 @@ describe("SauceDemo Login Tests", () => {
     console.log("UC-2 passed");
   });
 
-  // UC-3: Valid login
+
   creds.validUsers.forEach((user) => {
     it(`UC-3: should login successfully for ${user.username}`, async () => {
       await LoginPage.login(user.username, user.password);
