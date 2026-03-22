@@ -1,4 +1,4 @@
-module.exports = {
+module.exports= {
   validUsers:
     { username: "standard_user", passwo
     { username: "problem_user", password: "secret_sauce" },
