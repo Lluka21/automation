@@ -1,7 +1,7 @@
 exports.config = {
     //
     // ==================
-    // Runner Configuration
+    // Runner Configuratio
     // ====================
     // WebdriverIO supports running e2e testsas well as unit and component tests
     runner: 'local',
